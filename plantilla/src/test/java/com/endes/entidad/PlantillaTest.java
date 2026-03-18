@@ -53,17 +53,15 @@ class PlantillaTest {
 		plantilla.contratarEmpleado(tecnico);
 		plantilla.contratarEmpleado(comercial);
 
-		// Buscar por nombre
+	
 		List<Empleado> resultadoNombre = plantilla.getEmpleadosPorNombre("Alejandro");
 		assertEquals(1, resultadoNombre.size());
 		assertEquals("Alejandro", resultadoNombre.get(0).getNombre());
 
-		// Buscar por apellido
 		List<Empleado> resultadoApellido = plantilla.getEmpleadosPorNombre("Jiménez");
 		assertEquals(1, resultadoApellido.size());
 		assertEquals("Jiménez", resultadoApellido.get(0).getApellidos());
 
-		// Buscar con filtro que no existe
 		List<Empleado> resultadoVacio = plantilla.getEmpleadosPorNombre("NoExiste");
 		assertTrue(resultadoVacio.isEmpty());
 	}
