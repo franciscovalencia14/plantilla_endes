@@ -45,7 +45,7 @@ public class Comercial extends Empleado {
     /**
      * Establece un nuevo monto de ventas.
      * <p>
-     * Este valor se usa para calcular el sueldo del comercial. El incremento
+     * Este valor se usa para alcular el sueldo del comercial. El incremento
      * sobre el sueldo base es del 10% del monto de ventas.
      * </p>
      *
